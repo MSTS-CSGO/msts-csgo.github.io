@@ -7,5 +7,20 @@
 </head>
 <body>
     <p>CS:GO</p>
+    <button onclick="mejl();">Mejlaj</button>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function mejl() {
+			Email.send({
+                SecureToken : "d3cefcf8-af5c-475f-be7f-3975dee4bf50",
+				To : 'mstscsgo@gmail.com',
+				From : "mstscsgo@gmail.com",
+				Subject : "Novi Tim",
+				Body : "Test",
+			}).then(
+                message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
