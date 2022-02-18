@@ -10,13 +10,30 @@
     <button onclick="mejl();">Mejlaj</button>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        function tim() {
+            return "Ovdje cu ja preformulisati podatke";
+        }
+
+        function token() {
+            var a = String.fromCharCode(97);
+            var temp = 97;
+            var tt1 = 9;
+            temp += 17;
+            var b = String.fromCharCode(temp);
+            tt1 += 97;
+            c = String.fromCharCode(tt1) + "e";
+            return a + b + "nel" + c + "ko" + c;
+        }
+
         function mejl() {
 			Email.send({
-                SecureToken : "19cfa8a6-2254-4fa2-82a1-d87fbe079701",
-				To : 'nedimsehic00@gmail.com',
+                Host : "smtp.gmail.com",
+                Username : "mstscsgo@gmail.com",
+                Password : token(),
+				To : "mstscsgo@gmail.com",
 				From : "mstscsgo@gmail.com",
 				Subject : "Novi Tim",
-				Body : "Test",
+				Body : tim(),
 			}).then(
                 message => alert(message)
             );
