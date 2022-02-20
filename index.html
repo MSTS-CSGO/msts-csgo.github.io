@@ -3,39 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanter</title>
+    <title>Title</title>
 </head>
 <body>
     <p>CS:GO</p>
-    <button onclick="mejl();">Mejlaj</button>
+    <button onclick="mail();">Send Mail</button>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function tim() {
-            return "Ovdje cu ja preformulisati podatke";
-        }
-
-        function token() {
-            var a = String.fromCharCode(97);
-            var temp = 97;
-            var tt1 = 9;
-            temp += 17;
-            var b = String.fromCharCode(temp);
-            tt1 += 97;
-            c = String.fromCharCode(tt1) + "e";
-            return a + b + "nel" + c + "ko" + c;
-        }
-
-        function mejl() {
+        function mail() {
 			Email.send({
-                Host : "smtp.gmail.com",
-                Username : "mstscsgo@gmail.com",
-                Password : token(),
-				To : "mstscsgo@gmail.com",
-				From : "mstscsgo@gmail.com",
-				Subject : "Novi Tim",
-				Body : tim(),
-			}).then(
-                message => alert(message)
+                SecureToken : "cfa3c2cc-cf28-40ae-805c-27ce428832db",
+                To : 'mstscsgo@gmail.com',
+                From : "mstscsgo@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
             );
         }
     </script>
