@@ -62,6 +62,6 @@ function mail()
         Subject : "Registracija tima",
         Body : message
     }).then(
-        location.href = 'registracija.html'
+        message => alert(message)
     );
 }
