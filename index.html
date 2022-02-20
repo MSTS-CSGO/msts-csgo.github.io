@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-</head>
-<body>
-    <p>CS:GO</p>
-    <button onclick="mail();">Send Mail</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanter turnir</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function mail() {
-			Email.send({
-                SecureToken : "cfa3c2cc-cf28-40ae-805c-27ce428832db",
-                To : 'mstscsgo@gmail.com',
-                From : "mstscsgo@gmail.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
-</body>
+    <script src="mail.js"></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Prijava za MSTŠ CSGO turnir</h1>
+        <form action="/action_page.php">
+          <div class="d1">
+            <label for="fname">Naziv ekipe</label>
+            <input onchange="updateText()" id="ekipa" type="text" name="firstname" placeholder="Naziv" />
+          </div>
+
+          <div class="d2">
+            <label for="fname">Igrač 1</label>
+            <input onchange="updateText()" id="p1_name" type="text" name="firstname" placeholder="Ime" />
+            <input onchange="updateText()" id="p1_face" type="text" name="firstname" placeholder="Faceit link" />
+            <input onchange="updateText()" id="p1_prezime" type="text" name="firstname" placeholder="Prezime" />
+          </div>
+
+          <div class="d2">
+            <label for="fname">Igrač 2</label>
+            <input onchange="updateText()" id="p2_name"  type="text" name="firstname" placeholder="Ime" />
+            <input onchange="updateText()" id="p2_face"  type="text" name="firstname" placeholder="Faceit link" />
+            <input onchange="updateText()" id="p2_prezime" type="text" name="firstname" placeholder="Prezime" />
+          </div>
+
+          <div class="d2">
+            <label for="fname">Igrač 3</label>
+            <input onchange="updateText()" id="p3_name"  type="text" name="firstname" placeholder="Ime" />
+            <input onchange="updateText()" id="p3_face"  type="text" name="firstname" placeholder="Faceit link" />
+            <input onchange="updateText()" id="p3_prezime" type="text" name="firstname" placeholder="Prezime" />
+          </div>
+
+          <div class="d2">
+            <label for="fname">Igrač 4</label>
+            <input onchange="updateText()" id="p4_name"  type="text" name="firstname" placeholder="Ime" />
+            <input onchange="updateText()" id="p4_face"  type="text" name="firstname" placeholder="Faceit link" />
+            <input onchange="updateText()" id="p4_prezime" type="text" name="firstname" placeholder="Prezime" />
+          </div>
+
+          <div class="d2">
+            <label for="fname">Igrač 5</label>
+            <input onchange="updateText()" id="p5_name"  type="text" name="firstname" placeholder="Ime" />
+            <input onchange="updateText()" id="p5_face"  type="text" name="firstname" placeholder="Faceit link" />
+            <input onchange="updateText()" id="p5_prezime" type="text" name="firstname" placeholder="Prezime" />
+          </div>
+
+          <div class="d1">
+            <label for="fname" class="l1">Lider tima</label>
+            <input onchange="updateText()" id="lider" type="text" name="firstname" placeholder="Ime" />
+          </div>
+        </form>
+        <button onclick="mail();">Prijavi se</button>
+      </div>
+    </main>
+  </body>
 </html>
