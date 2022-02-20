@@ -55,6 +55,17 @@ function mail()
     "4. " + p4_name + " " + p4_prezime + " Faceit link: " + p4_face + "<BR>" +
     "5. " + p5_name + " " + p5_prezime + " Faceit link: " + p5_face + "<BR>";
 
+    if(ekipa == "" || lider == "" ||
+    p1_name == "" || p1_prezime == "" || p1_face == "" ||
+    p2_name == "" || p2_prezime == "" || p2_face == "" ||
+    p3_name == "" || p3_prezime == "" || p3_face == "" ||
+    p4_name == "" || p4_prezime == "" || p4_face == "" ||
+    p5_name == "" || p5_prezime == "" || p5_face == "")
+    {
+        alert("Morate popuniti sva polja.");
+        return;
+    }
+
     Email.send({
         SecureToken : "cfa3c2cc-cf28-40ae-805c-27ce428832db",
         To : 'mstscsgo@gmail.com',
@@ -62,6 +73,16 @@ function mail()
         Subject : "Registracija tima",
         Body : message
     }).then(
-        message => alert(message)
+        function(message) {
+            if(message == "OK")
+            {
+                alert("Uspjesno ste se registrovali.");
+                location.href = 'registracija.html';
+            }
+            else
+            {
+                alert("Nesto nije uredu sa serverima, pokusajte ponovo kasnije.")
+            }
+        }
     );
 }
