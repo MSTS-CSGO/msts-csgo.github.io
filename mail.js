@@ -48,12 +48,12 @@ function updateText() {
 
 function mail()
 {
-    let message = "Ime ekipe: " + ekipa + "\nLider: " + lider + "\nIgraci:\n" +
-    "1. " + p1_name + " " + p1_prezime + " Faceit link: " + p1_face + "\n" +
-    "2. " + p2_name + " " + p2_prezime + " Faceit link: " + p2_face + "\n" +
-    "3. " + p3_name + " " + p3_prezime + " Faceit link: " + p3_face + "\n" +
-    "4. " + p4_name + " " + p4_prezime + " Faceit link: " + p4_face + "\n" +
-    "5. " + p5_name + " " + p5_prezime + " Faceit link: " + p5_face + "\n";
+    let message = "Ime ekipe: " + ekipa + "<BR>Lider: " + lider + "<BR>Igraci:<BR>" +
+    "1. " + p1_name + " " + p1_prezime + " Faceit link: " + p1_face + "<BR>" +
+    "2. " + p2_name + " " + p2_prezime + " Faceit link: " + p2_face + "<BR>" +
+    "3. " + p3_name + " " + p3_prezime + " Faceit link: " + p3_face + "<BR>" +
+    "4. " + p4_name + " " + p4_prezime + " Faceit link: " + p4_face + "<BR>" +
+    "5. " + p5_name + " " + p5_prezime + " Faceit link: " + p5_face + "<BR>";
 
     Email.send({
         SecureToken : "cfa3c2cc-cf28-40ae-805c-27ce428832db",
