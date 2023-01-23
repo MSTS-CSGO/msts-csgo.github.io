@@ -38,7 +38,6 @@ main{
 .home{
 background-size:cover;
 background-repeat: no-repeat;
-background-image: url("slike/bg.png");
 height: 100vh;
 }
 
@@ -49,18 +48,51 @@ height: 100vh;
     padding: 40px;
     height: 100%;
 }
+.home .logomain{
 
+    margin-top: 250px;
+}
 .home h1{
+    color: #333333;
     font-size: 40px;
-    margin-top: 200px;
     margin-bottom: 50px;
     border-bottom: 2px solid black;
     text-align: center;
     width: 320px;
+    margin-left: 15px;
     font-weight: 700;
 }
 
 .home .desno img{
     width: 100%;
+}
+
+.home .prijavit{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+}
+
+.prijavit button{
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #0154ED;
+}
+
+.prijavit button:hover{
+    transition: ease 0.3s 0.05s;
+    background-color: #0154ED;
+    color: white;
+}
+
+.baner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -10;
 }
 
