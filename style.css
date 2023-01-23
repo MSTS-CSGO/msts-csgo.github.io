@@ -34,19 +34,30 @@ nav .desno ul li a{
 main{
 
 }
+
 .home{
 background-size:cover;
 background-repeat: no-repeat;
 background-image: url("slike/bg.png");
 height: 100vh;
 }
+
 .home .lijevo{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 40px;
     height: 100%;
+}
+
+.home h1{
+    font-size: 40px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    width: 320px;
+    font-weight: 700;
 }
 
 .home .desno img{
