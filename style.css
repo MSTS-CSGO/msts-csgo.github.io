@@ -4,10 +4,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 nav{
-   padding: 10px 50px; 
+   height: 6vh;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -29,10 +30,6 @@ nav .desno ul{
 nav .desno ul li a{
     color: #000;
     text-decoration: none;
-}
-
-main{
-
 }
 
 .home{
@@ -76,6 +73,7 @@ height: 100vh;
 }
 
 .prijavit button{
+    cursor: pointer;
     background-color: white;
     padding: 10px 25px;
     border-radius: 10px;
@@ -96,3 +94,59 @@ height: 100vh;
     z-index: -10;
 }
 
+.pravila{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px 0;
+    background-color: #333333;
+    color: white;
+}
+
+.pravila button{
+    font-size: 20px;
+    padding: 5px 25px;
+    background-color: #0154ED;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.kontakt{
+    background-color: #0154ED;
+    display: flex;
+    justify-content: center;
+
+}
+.kontakt form{
+    width: 50vw;
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.kontakt form h2{
+    text-align: center;
+}
+
+.kontakt form input, .kontakt form textarea{
+    font-size: 22px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    resize: none;
+}
+.kontakt form button{
+    background-color: #0154ED;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    padding: 5px;
+}
