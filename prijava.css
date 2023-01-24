@@ -7,6 +7,13 @@
     font-family: poppins;
 }
 
+.left {
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+    height: 50%;
+}
+
 .baner {
     position: absolute;
     top: 0;
@@ -19,6 +26,23 @@ form{
     gap: 20px;
     flex-direction: column;
 }
-form input{
-    
+form div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+form div input{
+    font-size: 18px;
+    padding: 2px 12px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+.leader{
+    width: 20px; height: 20px;
+}
+form div input:hover{
+    transition: ease 0.3s 0.05s;
+    cursor: pointer;
+    border: 1px solid #0154ED;
 }
