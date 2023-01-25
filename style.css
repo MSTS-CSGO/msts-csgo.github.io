@@ -8,6 +8,7 @@
 }
 
 nav{
+    position: absolute;
     height: 6vh;
    display: flex;
    justify-content: space-around;
@@ -16,6 +17,7 @@ nav{
    background-color: #fff;
    position: fixed;
    height: auto;
+   z-index: 1000;
 }
 
 
