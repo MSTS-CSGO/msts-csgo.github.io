@@ -43,11 +43,14 @@ nav .desno ul li a:hover{
 }
 
 .left {
+    position: absolute;
     text-align: center;
-    width: 50%;
+    left: 10vw;
+    width: 50vw;
     padding-top: 150px;
     height: 50%;
 }
+
 
 .baner {
     position: absolute;
