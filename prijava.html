@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="prijava.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <nav>
         <img src="slike/logoo.png" height="40px" alt="">
         <div class="desno">
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="mečevi.html">Mečevi</a></li>
-        </ul>
-    </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mečevi.html">Mečevi</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
         <div class="left">
             <h1>PRIJAVA EKIPA</h1>
-            <form action="">
+            <form id="js_form" action="">
                 <div>
-                    <input type="text" placeholder="Ime">
-                    <input type="text" placeholder="Faceit">
-                    <input type="text" placeholder="Prezime">
-                    <input type="radio" name="gas" class="leader">
-                    <label for="">Tim lider</label>
+                    <input onkeyup="shouldAdd();" type="text" placeholder="Ime">
+                    <input onkeyup="shouldAdd();" type="text" placeholder="Faceit">
+                    <input onkeyup="shouldAdd();" type="text" placeholder="Prezime">
                 </div>
                 <button>PRIJAVI</button>
             </form>
+            <button onclick="submit();">PRIJAVI</button>
         </div>
         <img src="slike/banerprijava.png" alt="" class="baner">
     </main>
 </body>
+
 </html>
