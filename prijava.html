@@ -13,7 +13,7 @@
 
 <body>
     <nav>
-        <img src="slike/logoo.png" height="40px" alt="">
+        <a href="index.html"><img src="slike/logoo.png" height="40px" alt=""></a>
         <div class="desno">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,14 +25,16 @@
         <div class="left">
             <h1>PRIJAVA EKIPA</h1>
             <form id="js_form" action="">
-                <div>
-                    <input onkeyup="shouldAdd();" type="text" placeholder="Ime">
-                    <input onkeyup="shouldAdd();" type="text" placeholder="Faceit">
-                    <input onkeyup="shouldAdd();" type="text" placeholder="Prezime">
-                </div>
-                <button>PRIJAVI</button>
+                <aside>
+                    <div>
+                        <input onkeyup="shouldAdd();" type="text" placeholder="Ime">
+                        <input onkeyup="shouldAdd();" type="text" placeholder="Faceit">
+                        <input onkeyup="shouldAdd();" type="text" placeholder="Prezime">
+                    </div>
+                    <label for="">(Lider)</label>
+                </aside>
             </form>
-            <button onclick="submit();">PRIJAVI</button>
+            <button onclick="submit();" style="margin-top: 20px;">PRIJAVI</button>
         </div>
         <img src="slike/banerprijava.png" alt="" class="baner">
     </main>
