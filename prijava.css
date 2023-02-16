@@ -61,6 +61,7 @@ nav .desno ul li a:hover {
 
 form {
     display: flex;
+    align-items: flex-start;
     gap: 20px;
     flex-direction: column;
 }
@@ -112,4 +113,17 @@ form button:hover {
     transition: ease 0.3s 0.05s;
     color: white;
     background-color: #0154ED;
+}
+
+.PrijavaBtn {
+    margin-top: 20px;
+}
+
+.prijava {
+    margin-top: 20px;
+}
+aside {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }

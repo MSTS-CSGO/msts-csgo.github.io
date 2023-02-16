@@ -9,7 +9,7 @@
 
 nav{
     position: absolute;
-    height: 6vh;
+    height: 10vh;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -47,19 +47,16 @@ nav .desno ul li a:hover{
 }
 
 .home{
-height: 100vh;
+height: 830px;
 }
 
 .home .lijevo{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 40px;
     height: 100%;
-}
-.home .logomain{
-
-    margin-top: 250px;
 }
 .home h1{
     color: #333333;
@@ -100,7 +97,6 @@ height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
     z-index: -10;
 }
 
@@ -108,19 +104,24 @@ height: 100vh;
     background-color: #333;
     color: white;
     box-shadow: #000 10px 10px 10px 10px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px 550px;
 }
-
+.HorizonCsgo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .oTurniru img{
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 
 .oTurniru div{
-    width: 48vw;
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
 }
 .oTurniru div h2 {
     text-align: center;
@@ -135,7 +136,6 @@ grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
-    margin-top: 70px;
     z-index: 3;
     padding: 20px 20px;
     box-shadow: #000 5px 5px 20px 3px;
@@ -148,10 +148,16 @@ grid-template-rows: 1fr 1fr;
     font-size: 20px;
     padding: 5px 25px;
     background-color: #0154ED;
-    border: none;
+    border: 1px solid #0154ED;
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+.pravila button:hover{
+    background-color: white;
+    border: 1px solid #0154ED;
+    color: black;
+    transition: ease 0.3s 0.05s;
 }
 
 .kontakt{
@@ -202,4 +208,77 @@ grid-template-rows: 1fr 1fr;
     transform: translateY(-1px);
     width: 50vw;
     z-index: 0;
+}
+
+@media (max-width:1370px){
+    .containerHome{
+        margin-top: 80px;
+    }
+    .home .prijavit{
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+
+}
+@media (max-width:1000px) {
+    .kontakt img{
+        display: none;
+    }
+    .home .lijevo{
+        justify-content: flex-end;
+    }
+        .containerHome {
+            margin-top: 0px;
+        }
+    .kontakt form{
+        width: 700px;
+    }
+    .oTurniru{
+        grid-template-columns: 1fr;
+            grid-template-rows: 550px 550px 550px 550px;
+    }
+    .oTurniru .HorizonCsgo, .oTurniru .mstsCsgo{
+        padding: 50px;
+    }
+    .oTurniru .HorizonCsgo{
+        order: 2;
+    }
+    .oTurniru .poster{
+        order: 3;
+    }
+
+}
+@media (max-width:675px) {
+    .oTurniru .HorizonCsgo, .oTurniru .mstsCsgo {
+            padding: 10px 20px;
+        }
+    .oTurniru img{
+        height: 400px;
+        
+    }
+    .oTurniru{
+        grid-template-rows: 550px 400px 550px 400px;
+        
+    }
+    .oTurniru div p{
+        font-size: 16px;
+    }
+}
+@media (max-width:450px) {
+    body{
+        min-width: 400px;
+    }
+    .oTurniru div p {
+            font-size: 15px;
+        }
+    .oTurniru .HorizonCsgo, .oTurniru .mstsCsgo {
+            padding: 5px 10px;
+        }
+    .oTurniru {
+        grid-template-rows: 550px 300px 550px 300px;        
+        }
+        .oTurniru img {
+            height: 300px;
+        }
 }
