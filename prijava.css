@@ -44,19 +44,21 @@ nav .desno ul li a:hover {
 
 .left {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    left: 10vw;
-    width: 50vw;
-    margin-top: 150px;
+    width: 960px;
+    margin: 150px 0 0 50px;
     height: 50%;
+    z-index: 10;
 }
 
 .baner {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
-    z-index: -10;
+    height: 100%;
+    z-index: 1;
 }
 
 form {
@@ -126,4 +128,8 @@ aside {
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+@media (max-width:1000px){
+    
 }

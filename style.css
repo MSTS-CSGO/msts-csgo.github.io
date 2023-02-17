@@ -227,6 +227,31 @@ height: 830px;
     }
     .home .lijevo{
         justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+    }
+    .containerHome{
+        z-index: 10;
+        display: flex;
+        width: 380px;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        height: 400px;
+    }
+    .home .prijavit{
+        justify-content: center;
+        align-items: center;
+    }
+    .home{
+        /* background-color: #0154ED; */
+    }
+    .home .baner{
+        z-index: 1;
+        height: 830px;
     }
         .containerHome {
             margin-top: 0px;
