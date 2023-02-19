@@ -18,6 +18,7 @@ nav{
    position: fixed;
    height: auto;
    z-index: 1000;
+   transition: ease 0.3s 0.05s;
 }
 
 
@@ -33,10 +34,18 @@ nav .desno ul{
     
 }
 
+nav button{
+    display: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
 nav .desno ul li a{
     color: #000;
     padding:  4px 15px;
     height: 100%;
+    transition: all 0.5s 0.05s;
     text-decoration: none;
 }
 
@@ -221,7 +230,44 @@ height: 830px;
 
 
 }
+@media (min-width:1001px) {
+    nav ul li a{
+        display: block;
+    }
+}
 @media (max-width:1000px) {
+    nav{
+        flex-direction: column;
+    }
+    .lijevo{
+        display: flex;
+        background-color: #fff;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .desno{
+        width: 100%;
+        background-color: none;
+        transform: translateY(-50px);
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a{
+        display: none;
+        width: 100%;
+        padding: 10px;
+        gap: 0;
+    }
+    .desno ul{
+        flex-direction: column;
+        gap: 0;
+    }
+    nav button{
+        display: block;
+    }
     .kontakt img{
         display: none;
     }
@@ -273,6 +319,24 @@ height: 830px;
         order: 3;
     }
 
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .navbar-menu {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 }
 @media (max-width:675px) {
     .oTurniru .HorizonCsgo, .oTurniru .mstsCsgo {
