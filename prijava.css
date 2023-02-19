@@ -10,7 +10,6 @@
 
 nav {
     height: 6vh;
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,6 +27,7 @@ nav .desno ul {
     color: black;
     font-size: 22px;
     font-weight: 500;
+    width: 10%;
     height: auto;
 }
 
@@ -60,16 +60,22 @@ nav .desno ul li a:hover {
     top: 0;
     right: 0;
     height: 100%;
+    width: 1000px;
     z-index: 1;
 }
 
 form {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     flex-direction: column;
+    gap: 20px;
 }
-
+.formaa{
+    display: flex;
+}
+.formaa label{
+    margin: 6px 5px 0 0;
+}
 form div {
     display: flex;
     /* flex-direction: column; */
@@ -133,9 +139,19 @@ aside {
     align-items: center;
 }
 
-@media (max-width:950px){
+@media (max-width:1050px){
     .left{
         margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+    main{
+        min-width: 350px;
+    }
+    .formaa{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     form aside{
         display: flex;
@@ -151,5 +167,14 @@ aside {
     }
     nav{
         width: 100%;
+        background-color: #fff;
+    }
+}
+ @media (max-width:800px){
+    .baner{
+        height: 100%;
+    }
+    .left h1, .formaa label{
+        color: white;
     }
 }
