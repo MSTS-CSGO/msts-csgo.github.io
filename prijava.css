@@ -11,9 +11,10 @@
 nav {
     height: 6vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     width: 55%;
+    z-index: 10;
     position: fixed;
     height: auto;
 }
@@ -26,6 +27,7 @@ nav .desno ul {
     color: black;
     font-size: 22px;
     font-weight: 500;
+    width: 10%;
     height: auto;
 }
 
@@ -44,28 +46,36 @@ nav .desno ul li a:hover {
 
 .left {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    left: 10vw;
-    width: 50vw;
-    margin-top: 150px;
+    width: 835px;
+    margin: 150px 0 0 50px;
     height: 50%;
+    z-index: 10;
 }
 
 .baner {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
-    z-index: -10;
+    height: 100%;
+    width: 1000px;
+    z-index: 1;
 }
 
 form {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     flex-direction: column;
+    gap: 20px;
 }
-
+.formaa{
+    display: flex;
+}
+.formaa label{
+    margin: 6px 5px 0 0;
+}
 form div {
     display: flex;
     /* flex-direction: column; */
@@ -78,6 +88,7 @@ form div input {
     font-weight: 600px;
     font-size: 18px;
     padding: 2px 12px;
+    width: 250px;
     border-radius: 10px;
     border: 2px solid #333;
 }
@@ -109,7 +120,7 @@ input[type=text]:focus {
     background-color: white;
 }
 
-form button:hover {
+.left button:hover {
     transition: ease 0.3s 0.05s;
     color: white;
     background-color: #0154ED;
@@ -126,4 +137,44 @@ aside {
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+@media (max-width:1050px){
+    .left{
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+    main{
+        min-width: 350px;
+    }
+    .formaa{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    form aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+        width: 100%;
+    }
+    form div{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        background-color: #fff;
+    }
+}
+ @media (max-width:800px){
+    .baner{
+        height: 100%;
+    }
+    .left h1, .formaa label{
+        color: white;
+    }
 }
