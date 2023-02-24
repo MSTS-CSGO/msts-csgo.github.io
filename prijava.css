@@ -84,7 +84,7 @@ form div {
     justify-content: center;
 }
 
-form div input {
+input {
     font-weight: 600px;
     font-size: 18px;
     padding: 2px 12px;

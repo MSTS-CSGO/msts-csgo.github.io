@@ -32,7 +32,7 @@ function submit() {
   console.log(count);
   if (shouldAdd(false) == 1 || count != 5) return;
 
-  let ekipa = "UNIMPLEMENTED";
+  let ekipa = document.querySelector(".imeEkipe");
   let mail = "UNIMPLEMENTED";
 
   for (let i = 0; i < form.length; i += 3) {
