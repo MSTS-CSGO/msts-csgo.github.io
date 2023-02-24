@@ -29,12 +29,9 @@ function isValidHttpUrl(string) {
 }
 
 function submit() {
-  console.log(count);
   if (shouldAdd(false) == 1 || count != 5) return;
-
-  let ekipa = document.querySelector(".imeEkipe");
-  let mail = "UNIMPLEMENTED";
-
+  let ekipa = document.querySelector(".imeEkipe").value;
+  let mail = document.querySelector(".imeEkipe").value;
   for (let i = 0; i < form.length; i += 3) {
     if (!isValidHttpUrl(form[i + 1].value)) {
       alert("Link mora biti u punom http ili https formatu.");
