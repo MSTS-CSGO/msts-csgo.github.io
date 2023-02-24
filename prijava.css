@@ -19,7 +19,7 @@ nav {
     height: auto;
 }
 
-nav .desno ul {
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,14 +31,14 @@ nav .desno ul {
     height: auto;
 }
 
-nav .desno ul li a {
+nav ul li a {
     color: #000;
     padding: 4px 15px;
     height: 100%;
     text-decoration: none;
 }
 
-nav .desno ul li a:hover {
+nav ul li a:hover {
     background-color: #0154ED;
     color: white;
     transition: ease 0.3s 0.05s;
@@ -84,7 +84,7 @@ form div {
     justify-content: center;
 }
 
-form div input {
+input {
     font-weight: 600px;
     font-size: 18px;
     padding: 2px 12px;
@@ -178,3 +178,18 @@ aside {
         color: white;
     }
 }
+ @media (max-width:400px) {
+     nav img{
+         height: 30px;
+     }
+     nav{
+        justify-content: center;
+        gap: 20px;
+
+     }
+
+     .left h1,
+     .formaa label {
+         color: white;
+     }
+ }

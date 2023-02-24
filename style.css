@@ -286,7 +286,7 @@ height: 830px;
         flex-direction: column;
         justify-content: center;
         background-color: white;
-        height: 400px;
+        height: 430px;
     }
     .home .prijavit{
         justify-content: center;
@@ -356,7 +356,7 @@ height: 830px;
 }
 @media (max-width:450px) {
     body{
-        min-width: 400px;
+        min-width: 300px;
     }
     .oTurniru div p {
             font-size: 15px;
@@ -365,9 +365,31 @@ height: 830px;
             padding: 5px 10px;
         }
     .oTurniru {
-        grid-template-rows: 550px 300px 550px 300px;        
+        grid-template-rows: 550px 300px 550px 300px; 
+        grid-template-columns: 100vw;       
         }
         .oTurniru img {
             height: 300px;
         }
+}
+@media (max-width:400px){
+    nav .lijevo img {
+        height: 30px;
+    }
+    .containerHome {
+            width: 310px;
+            height: 430px;
+        }
+    h1{
+        width: 280px;
+    }
+    .logomain{
+        width: 280px;
+    }
+    .oTurniru img{
+        width: 100vw;
+    }
+    .kontakt form{
+        width: 300px;
+    }
 }
